@@ -1,0 +1,10 @@
+{
+    "type": "EQUITY",
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "price": 257.5,
+    "currency": "USD",
+    "change_abs": 1.6799927,
+    "change_pct": 0.006567089,
+    "last_update": 1572901201000
+}

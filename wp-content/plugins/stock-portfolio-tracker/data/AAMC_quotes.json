@@ -1,0 +1,10 @@
+{
+    "type": "EQUITY",
+    "symbol": "AAMC",
+    "name": "Altisource Asset Management Corporation",
+    "price": 11.427,
+    "currency": "USD",
+    "change_abs": -1.073,
+    "change_pct": -0.08584,
+    "last_update": 1573592398000
+}

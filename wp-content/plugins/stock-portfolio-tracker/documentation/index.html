@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Portfolio Tracker - Documentation</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"></link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Stock Portfolio Tracker</h1>
+            <h2 class="subtitle">
+                WordPress plugin Documentation
+            </h2>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">
+                About
+            </h2>
+            <div class="content">
+                <p>
+                    <b>Stock Portfolio Tracker</b> is a plugin, which allows your website visitors to create and track
+                    their own stock portfolios.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">
+                System requirements
+            </h2>
+            <div class="content">
+                <ul type="1">
+                    <li>WordPress 3.x or higher</li>
+                    <li>PHP 5.6.0 or higher</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">
+                Setup
+            </h2>
+            <h3 class="subtitle">Firebase</h3>
+            <div class="content">
+                <p>
+                    The plugin uses <a href="https://firebase.google.com/" target="_blank">Google Firebase</a>
+                    to store user portfolios data and optionally authenticate users. Please follow these steps to set up a Firebase application:
+                </p>
+                <ol>
+                    <li>
+                        In the <a href="https://console.firebase.google.com" target="_blank">Firebase console</a>
+                        project overview page, click the Web icon to launch the setup workflow.
+                        If you already added an app to your Firebase project, click <b>Add app</b> to display the platform options.
+                    </li>
+                    <li>Enter the app name (e.g. <i>My Portfolio Tracking App</i>).</li>
+                    <li>Click <b>Register app</b>.</li>
+                    <li>After the Firebase app is created click the cog icon next to <b>Project Overview</b> and select <b>Project settings</b>.</li>
+                    <li>
+                        On <b>General</b> tab copy <b>Project ID</b> and <b>Web API Key</b> (you will need them later):
+                        <img src="assets/images/firebase-01.png">
+                    </li>
+                    <li>
+                        On <b>Cloud Messaging</b> tab copy <b>Sender ID</b> (you will need it later):
+                        <img src="assets/images/firebase-02.png">
+                    </li>
+                    <li>
+                        Click <b>Authentication</b> in the main menu and open <b>Sign-in method</b> tab. Find <b>Anonymous</b>
+                        provider in the table and click on it to enable. If you wish to use authentication with email and password
+                        then you also need to enable <b>Email/Password</b> provider.
+                    </li>
+                    <li>
+                        Click <b>Databse</b> in the main menu and then click <b>Create database</b>. Choose <b>Start in locked mode</b>
+                        and click <b>Enable</b>.
+                    </li>
+                    <li>
+                        When the database is created choose <b>Realtime database</b> in the menu, you will see something like this:
+                        <img src="assets/images/firebase-03.png">
+                    </li>
+                    <li>
+                        Open <b>Rules</b> tab, replace the editor content with the following and then click <b>Publish</b>:
+                        <pre>
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        "portfolios": {
+          ".read": "$uid == auth.uid",
+          ".write": "$uid == auth.uid",
+          "$pid": {
+            ".read": "$uid == auth.uid || root.child('shared-portfolios/' + $pid).exists()",
+            ".write": "$uid == auth.uid"
+          }
+        },
+        "transactions": {
+          "$pid": {
+            ".read": "$uid == auth.uid || root.child('shared-portfolios/' + $pid).exists()",
+            ".write": "$uid == auth.uid"
+          }
+        }
+      }
+    },
+    "shared-portfolios": {
+      "$pid": {
+        ".read": true,
+        ".write": "data.val() == null && newData.val() == auth.uid || data.val() == auth.uid && newData.val() == null"
+      }
+    }
+  }
+}
+                        </pre>
+                        You should see a message that rules are successfully published.
+                    </li>
+                </ol>
+            </div>
+
+            <h3 class="subtitle">Plugin installation</h3>
+            <div class="content">
+                <ul>
+                    <li>Download the plugin zip archive from CodeCanyon.</li>
+                    <li>Log in to WordPress admin area and select <b>Plugins » Add New</b> in the main menu.</li>
+                    <li>Click <b>Upload plugin</b> button.</li>
+                    <li>Select the downloaded plugin zip archive.</li>
+                    <li>Click <b>Install now</b> button.</li>
+                    <li>After the plugin is installed click <b>Activate</b> button.</li>
+                    <li>Click <b>Stock Portfolio Tracker</b> in the main menu to open the plugin settings page.</li>
+                    <li>
+                        Insert <b>[stock_portfolio_tracker]</b> shortcode to a page or post where you want the
+                        <b>Stock Portfolio Tracker</b> app to load.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">
+                Frequently Asked Questions
+            </h2>
+            <h3 class="subtitle"><i class="fas fa-chevron-right"></i> What is Firebase authentication for?</h3>
+            <div class="content">
+                <p>
+                    Firebase authentication allows the plugin to identify users of the <b>Stock Portfolio Tracker</b> plugin
+                    - either explicitly or implicitly. This is required for mapping stored user portfolios to specific user accounts,
+                    so that when a user visits your website again portfolios that the user created earlier can be loaded from the realtime database.
+                </p>
+                <p>
+                    When Firebase authentication is <b>enabled</b> users will be required to log in or sign up before creating any portfolios.
+                    Please note that this authentication is different from the native WordPress authentication, so even if user is logged in to your
+                    WordPress website separate authentication against Firebase will still be required.
+                </p>
+                <p>
+                    When Firebase authentication is <b>disabled</b> users will be automatically authenticated using anonymous accounts
+                    when first accessing the app. Their sessions will be stored in a browser and remain active until
+                    browser cache / local data is cleared.
+                </p>
+                <p>
+                    You can manage all users accounts by going to <a href="https://console.firebase.google.com" target="_blank">Firebase console</a>, choosing your Firebase app and clicking <b>Authentication</b> in the main menu.
+                </p>
+            </div>
+            <h3 class="subtitle">How to customize the password reset email template?</h3>
+            <div class="content">
+                <div class="content">
+                    <p>
+                        In the <a href="https://console.firebase.google.com" target="_blank">Firebase console</a> click
+                        <b>Authentication</b> in the main menu and then switch to <b>Templates</b> tab. Choose <b>Password Reset</b>
+                        from the list of templates and customize it as needed.
+                    </p>
+                </div>
+            </div>
+            <h3 class="subtitle"><i class="fas fa-chevron-right"></i> How to translate text strings into my native language?</h3>
+            <div class="content">
+                <p>
+                    The plugin is WPML compatible, which means that you can use any WordPress translation plugin
+                    (such as <a href="https://wordpress.org/plugins/loco-translate/" target="_blank">Loco Translate</a> for instance)
+                    to translate text strings from English into any other language.
+                </p>
+            </div>
+            <h3 class="subtitle"><i class="fas fa-chevron-right"></i> How to upgrade the plugin?</h3>
+            <div class="content">
+                <div class="content">
+                    <ul>
+                        <li>Download the plugin zip archive from CodeCanyon.</li>
+                        <li>Log in to WordPress admin area and select <b>Plugins » Installed Plugins</b> in the main menu.</li>
+                        <li>Find <b>Stock Portfolio Tracker</b> in the list of plugins, click <b>Deactivate</b> and then <b>Delete</b>.</li>
+                        <li>Install the new version of the plugin as if was the first time (note that the plugin settings will be preserved).</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="subtitle"><i class="fas fa-chevron-right"></i> How do I get support?</h3>
+            <div class="content">
+                <p>
+                    In case of any issues or questions please submit a support ticket at
+                    <a href="https://support.financialplugins.com" target="_blank">https://support.financialplugins.com</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns has-text-centered-mobile">
+                <div class="column">
+                    &copy; <strong>Stock Portfolio Tracker</strong>
+                </div>
+                <div class="column has-text-right has-text-centered-mobile">
+                    Built with <i class="fas fa-heart has-text-primary"></i> by <a href="https://financialplugins.com" target="_blank">Financial Plugins</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

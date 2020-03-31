@@ -1,0 +1,10 @@
+{
+    "type": "EQUITY",
+    "symbol": "ABBV",
+    "name": "AbbVie Inc.",
+    "price": 81.75,
+    "currency": "USD",
+    "change_abs": 2.199997,
+    "change_pct": 0.027655523,
+    "last_update": 1572638610000
+}

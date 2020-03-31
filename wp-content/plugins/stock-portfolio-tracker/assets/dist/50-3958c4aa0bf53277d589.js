@@ -1,0 +1,12 @@
+/*!
+ * Stock Portfolio Tracker
+ * ------------------------------
+ * Version 1.0.0, built on Tuesday, May 28, 2019
+ * Copyright (c) Financial Apps and Plugins <info@financialplugins.com>. All rights reserved.
+ * Demo: https://financialplugins.com/products/stock-portfolio-tracker/
+ * Purchase (WordPress plugin): https://codecanyon.net/item/stock-portfolio-tracker-wordpress-plugin/23877899?ref=financialtechnology
+ * Purchase (PHP plugin): https://codecanyon.net/item/stock-portfolio-tracker-php-plugin/23877962?ref=financialtechnology
+ * Like: https://www.facebook.com/financialplugins/
+ * 
+ */
+(window.webpackJsonp=window.webpackJsonp||[]).push([[50],{28:function(t,s,n){"use strict";var e=function(){var t=this,s=t.$createElement;return(t._self._c||s)("button",{class:t.classes,on:{click:function(s){return t.$parent.action(t.action)}}},[t._t("default")],2)};e._withStripped=!0;var i={props:["action","submitted"],computed:{classes:function(){return["spt-button","spt-is-primary",{"spt-is-loading":this.submitted}]}}},a=n(21),o=Object(a.a)(i,e,[],!1,null,null,null);o.options.__file="assets/js/src/components/elements/submit-button.vue";s.a=o.exports},425:function(t,s,n){"use strict";n.r(s);var e=function(){var t=this,s=t.$createElement,n=t._self._c||s;return n("div",[n("div",{staticClass:"spt-columns spt-is-centered spt-mh-100vh spt-is-vcentered"},[n("div",{staticClass:"spt-column spt-is-half spt-has-text-centered"},[n("h2",{staticClass:"spt-title spt-is-2"},[t._v(t._s(t.__("Something is wrong")))]),t._v(" "),n("h3",{staticClass:"spt-subtitle spt-is-3"},[t._v(t._s(t.__("Nothing is found")))]),t._v(" "),n("router-link",{staticClass:"spt-button spt-is-primary",attrs:{to:{name:"home"}}},[t._v(t._s(t.__("Home page")))])],1)])])};e._withStripped=!0;var i=n(51),a=n.n(i),o=(n(61),n(30)),r=n(37),u=n(28),l={mixins:[o.a,r.a],components:{SubmitButton:u.a},data:function(){return{email:null,password:null}},methods:{login:function(){var t=this;return a.a.auth().signInWithEmailAndPassword(this.email,this.password).then(function(s){t.$router.replace({name:"home"})})}}},c=n(21),p=Object(c.a)(l,e,[],!1,null,null,null);p.options.__file="assets/js/src/components/errors/404.vue";s.default=p.exports}}]);

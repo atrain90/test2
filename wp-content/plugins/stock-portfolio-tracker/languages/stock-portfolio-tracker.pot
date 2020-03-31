@@ -1,0 +1,459 @@
+# Copyright (C) 2019 Stock Portfolio Tracker
+# This file is distributed under the same license as the Stock Portfolio Tracker package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Stock Portfolio Tracker\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Financial Plugins <info@financialplugins.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../admin/settings.php:7
+msgid "Settings are successfully saved"
+msgstr ""
+
+#: ../admin/settings.php:14
+msgid "Plugin settings"
+msgstr ""
+
+#: ../admin/settings.php:23
+msgid "Color scheme"
+msgstr ""
+
+#: ../admin/settings.php:37
+msgid "Firebase API key"
+msgstr ""
+
+#: ../admin/settings.php:45
+msgid "Firebase application ID"
+msgstr ""
+
+#: ../admin/settings.php:53
+msgid "Firebase sender ID"
+msgstr ""
+
+#: ../admin/settings.php:61
+msgid "Enable Firebase authentication"
+msgstr ""
+
+#: ../admin/settings.php:65
+msgid "Require users to log in / sign up (note that it is different from WordPress authentication)."
+msgstr ""
+
+#: ../admin/settings.php:70
+msgid "Locale"
+msgstr ""
+
+#: ../admin/settings.php:75
+msgid "Locale for dates formatting. Example: de_DE, de_CH, fr_FR, it_IT, el_GR, cs_CZ, ru_RU, pt_BR"
+msgstr ""
+
+#: ../admin/settings.php:81
+msgid "Thousands separator"
+msgstr ""
+
+#: ../admin/settings.php:89
+msgid "Decimal separator"
+msgstr ""
+
+#: ../admin/settings.php:97
+msgid "Enqueue priority"
+msgstr ""
+
+#: ../admin/settings.php:105
+msgid "AJAX method"
+msgstr ""
+
+#: ../admin/settings.php:109
+msgid "GET"
+msgstr ""
+
+#: ../admin/settings.php:110
+msgid "POST"
+msgstr ""
+
+#: ../admin/settings.php:116
+msgid "Save settings"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:76, ../classes/StockPortfolioTracker/Plugin.php:79
+msgid "b"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:77
+msgid "k"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:78
+msgid "m"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:81
+msgid "Are you sure you want to delete this portfolio and all related data?"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:82
+msgid "Are you sure you want to delete this transaction?"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:83
+msgid "Asset"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:84
+msgid "Asset with the greatest total P/L"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:85
+msgid "Asset with the lowest total P/L"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:86
+msgid "Best"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:87
+msgid "By investment"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:88
+msgid "By market value"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:89
+msgid "Cancel"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:90
+msgid "Close transaction"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:91
+msgid "Closed"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:92
+msgid "Composition"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:93
+msgid "Copy"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:94
+msgid "Cost"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:95
+msgid "Create"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:96
+msgid "Create portfolio"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:97
+msgid "Create transaction"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:98
+msgid "Currency"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:99
+msgid "Date"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:100
+msgid "Delete"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:101
+msgid "Delete transaction"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:102
+msgid "Description"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:103
+msgid "Disable sharing"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:104
+msgid "Edit"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:105
+msgid "Edit portfolio"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:106
+msgid "Edit transaction"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:107
+msgid "Email"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:108
+msgid "Error"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:109
+msgid "Get shareable link"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:110
+msgid "Home page"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:111
+msgid "Incognito"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:112
+msgid "Investment"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:113
+msgid "Log in"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:114
+msgid "Log out"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:115
+msgid "Market Value"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:116
+msgid "Market value"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:117
+msgid "Max historical market value of the portfolio"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:118
+msgid "Max value"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:119
+msgid "Menu"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:120
+msgid "Min historical market value of the portfolio"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:121
+msgid "Min value"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:122
+msgid "New portfolio"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:123
+msgid "New transaction"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:124
+msgid "No closed transactions"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:125
+msgid "No open transactions"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:126
+msgid "No portfolios"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:127
+msgid "No transactions"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:128
+msgid "Nothing is found"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:129
+msgid "Open"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:130
+msgid "Other people will be able to view your portfolio using the link below."
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:131
+msgid "P/L"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:132
+msgid "P/L %"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:133
+msgid "Password"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:134
+msgid "Performance"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:135
+msgid "Portfolio sharing"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:136
+msgid "Portfolios"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:137
+msgid "Price"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:138
+msgid "Purchase Date"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:139
+msgid "Purchase Price"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:140
+msgid "Quantity"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:141
+msgid "ROI"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:142
+msgid "Real-time valuation and analytics"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:143
+msgid "Realized P/L"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:144
+msgid "Reset password"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:145
+msgid "Return"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:146
+msgid "Return on investment"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:147
+msgid "Save"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:148
+msgid "Sell Date"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:149
+msgid "Sell Price"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:150
+msgid "Sell asset (close transaction)"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:151
+msgid "Share"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:152
+msgid "Sign up"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:153
+msgid "Something is wrong"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:154
+msgid "Standard deviation of daily portfolio returns"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:155
+msgid "Start by adding a transaction"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:156
+msgid "Start by creating one"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:157
+msgid "Stock Portfolio Tracker"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:158
+msgid "Submit"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:159
+msgid "Summary"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:160
+msgid "This portfolio is private."
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:161
+msgid "Title"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:162
+msgid "Total Market Value"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:163
+msgid "Total P/L"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:164
+msgid "Total cost"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:165
+msgid "Total value of investment in a particular asset"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:166
+msgid "Transactions"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:167
+msgid "Unrealized P/L"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:168
+msgid "View"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:169
+msgid "Volatility"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:170
+msgid "Worst"
+msgstr ""
+
+#: ../classes/StockPortfolioTracker/Plugin.php:171
+msgid "You can sell up to {0} {1}"
+msgstr ""

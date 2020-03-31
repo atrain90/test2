@@ -1,0 +1,705 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Member - Social Activity\n"
+"POT-Creation-Date: 2018-07-03 16:54+0300\n"
+"PO-Revision-Date: 2018-07-03 16:54+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: um-social-activity.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/templates/role/activity.php:11
+msgid "Turn off social wall for this user?"
+msgstr ""
+
+#: includes/admin/templates/role/activity.php:17
+msgid "Do not allow this role to write posts?"
+msgstr ""
+
+#: includes/admin/templates/role/activity.php:23
+msgid "Turn off uploading photos?"
+msgstr ""
+
+#: includes/admin/templates/role/activity.php:29
+msgid "Do not allow this role to write comments?"
+msgstr ""
+
+#: includes/core/actions/um-activity-actions.php:405
+msgid "Answer"
+msgstr ""
+
+#: includes/core/actions/um-activity-admin.php:13
+#: includes/core/class-activity-admin.php:121
+#: includes/core/filters/um-activity-settings.php:30
+#: includes/core/um-activity-init.php:71 includes/core/um-activity-init.php:72
+msgid "Social Activity"
+msgstr ""
+
+#: includes/core/actions/um-activity-footer.php:18
+msgid "Yes"
+msgstr ""
+
+#: includes/core/actions/um-activity-footer.php:19
+msgid "No"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:12
+#: includes/core/class-activity-setup.php:51
+msgid "User get a new wall post"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:14
+#: includes/core/class-activity-setup.php:53
+msgid "When someone publish a post on my wall"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:18
+#: includes/core/class-activity-setup.php:57
+msgid "User get a new wall comment"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:20
+#: includes/core/class-activity-setup.php:59
+msgid "When someone comments on your post"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:24
+#: includes/core/class-activity-setup.php:63
+msgid "User get a new post like"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:26
+#: includes/core/class-activity-setup.php:65
+msgid "When someone likes your post"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:30
+#: includes/core/class-activity-setup.php:69
+msgid "User get a new mention"
+msgstr ""
+
+#: includes/core/actions/um-activity-webnotification.php:32
+#: includes/core/class-activity-setup.php:71
+msgid "When someone mentions me"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:89
+msgid "This can be done from the frontend only."
+msgstr ""
+
+#: includes/core/class-activity-admin.php:97
+msgid "Flagged"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:121
+#, php-format
+msgid "Social Activity %s"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:123
+#: includes/core/class-activity-admin.php:156
+#: includes/core/um-activity-init.php:106
+msgid "Hashtags"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:154
+msgid "Author"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:155
+msgid "Content"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:157
+msgid "Likes"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:158
+msgid "Comments"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:159
+msgid "Action"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:191 templates/clone.php:26
+#: templates/comment-reply.php:34 templates/comment.php:52
+#: templates/comments.php:37 templates/comments.php:68
+#: templates/user-wall.php:114
+msgid "Edit"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:191
+msgid "Permalink"
+msgstr ""
+
+#: includes/core/class-activity-admin.php:202
+#, php-format
+msgid "This post is flagged by community. <a href=\"%s\">Clear report</a>"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:14
+#: includes/core/class-activity-setup.php:13
+msgid "New wall post"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:15
+#: includes/core/class-activity-setup.php:14
+msgid "New user"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:16
+#: includes/core/class-activity-setup.php:15
+msgid "New blog post"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:17
+#: includes/core/class-activity-setup.php:16
+msgid "New product"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:18
+#: includes/core/class-activity-setup.php:17
+msgid "New Gravity From"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:19
+#: includes/core/class-activity-setup.php:18
+msgid "New Gravity From Answer"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:20
+#: includes/core/class-activity-setup.php:19
+msgid "New follow"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:21
+#: includes/core/class-activity-setup.php:20
+msgid "New forum topic"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:182
+#: includes/core/class-activity-setup.php:117
+#: includes/core/filters/um-activity-settings.php:10
+msgid "Activity"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:230
+msgid "See more"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:436
+msgid "Untitled"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:626 templates/clone.php:13
+msgid "Just now"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:634
+#, php-format
+msgid "%s min"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:636
+#, php-format
+msgid "%s mins"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:645
+#, php-format
+msgid "%s hr"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:647
+#, php-format
+msgid "%s hrs"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:656
+#, php-format
+msgid "Yesterday at %s"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:658
+#: includes/core/class-activity-main-api.php:663
+#: includes/core/class-activity-main-api.php:667
+#: includes/core/class-activity-main-api.php:671
+#, php-format
+msgid "%s at %s"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:707 templates/likes.php:2
+msgid "People who like this"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1367
+#: includes/core/class-activity-main-api.php:1439
+msgid "You must login to like"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1370
+#: includes/core/class-activity-main-api.php:1407
+msgid "Invalid comment"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1404
+#: includes/core/class-activity-main-api.php:1478
+msgid "You must login to unlike"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1442
+#: includes/core/class-activity-main-api.php:1481
+#: includes/core/class-activity-main-api.php:1516
+msgid "Invalid wall post"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1513
+msgid "Login to post a comment"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1519
+msgid "Enter a comment first"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1601
+msgid "You can not post as guest"
+msgstr ""
+
+#: includes/core/class-activity-main-api.php:1605
+msgid "You should type something first"
+msgstr ""
+
+#: includes/core/class-activity-setup.php:33
+#, php-format
+msgid ""
+"Please <a href=\"%s\" class=\"um-link\">sign up</a> or <a href=\"%s\" class="
+"\"um-link\">sign in</a> to like or comment on this post."
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:12
+msgid "You must login to view this user activity"
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:20
+msgid "Please login to view this user's activity"
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:23
+msgid "This user wall is private"
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:51
+msgid "Public"
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:52
+msgid "Members"
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:53
+msgid "Only me"
+msgstr ""
+
+#: includes/core/filters/um-activity-privacy.php:59
+#: includes/core/filters/um-activity-privacy.php:62
+msgid "Who can see your activity wall?"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:22
+msgid "Social Activity License Key"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:35
+msgid "Number of wall posts on desktop"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:41
+msgid "Maximum number of faces"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:47
+msgid "Number of wall posts on mobile"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:53
+msgid "Number of initial comments/replies to display per post"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:59
+msgid "Number of comments/replies to get when user load more"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:65
+msgid "Comments order"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:67
+msgid "Newest first"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:68
+msgid "Oldest first"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:70
+msgid "Select..."
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:76
+msgid "How many words appear before wall post is truncated?"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:83
+msgid "Allow users to set their activity wall privacy through account page?"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:88
+msgid "Trending Hashtags Days"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:89
+msgid ""
+"Enter number of days here. For example: 0 will calculate trending hashtags "
+"over today only, and 7 will calculate trending hashtags over a 7 day period."
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:95
+msgid "Require user to login to view activity walls?"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:100
+msgid "Text to display If user needs to login to interact in a post"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:106
+msgid "Active Color"
+msgstr ""
+
+#: includes/core/filters/um-activity-settings.php:124
+#, php-format
+msgid "Enable \"%s\" in activity"
+msgstr ""
+
+#: includes/core/um-activity-init.php:73 includes/core/um-activity-init.php:74
+msgid "Add New Post"
+msgstr ""
+
+#: includes/core/um-activity-init.php:75
+msgid "Edit Post"
+msgstr ""
+
+#: includes/core/um-activity-init.php:76
+msgid "No wall posts have been added yet"
+msgstr ""
+
+#: includes/core/um-activity-init.php:77
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: includes/core/um-activity-init.php:78
+msgid "Search Posts"
+msgstr ""
+
+#: includes/core/um-activity-init.php:91
+msgctxt "taxonomy general name"
+msgid "Hashtags"
+msgstr ""
+
+#: includes/core/um-activity-init.php:92
+msgctxt "taxonomy singular name"
+msgid "Hashtag"
+msgstr ""
+
+#: includes/core/um-activity-init.php:93
+msgid "Search Hashtags"
+msgstr ""
+
+#: includes/core/um-activity-init.php:94
+msgid "Popular Hashtags"
+msgstr ""
+
+#: includes/core/um-activity-init.php:95
+msgid "All Hashtags"
+msgstr ""
+
+#: includes/core/um-activity-init.php:98
+msgid "Edit Hashtag"
+msgstr ""
+
+#: includes/core/um-activity-init.php:99
+msgid "Update Hashtag"
+msgstr ""
+
+#: includes/core/um-activity-init.php:100
+msgid "Add New Hashtag"
+msgstr ""
+
+#: includes/core/um-activity-init.php:101
+msgid "New Hashtag Name"
+msgstr ""
+
+#: includes/core/um-activity-init.php:102
+msgid "Separate hashtags with commas"
+msgstr ""
+
+#: includes/core/um-activity-init.php:103
+msgid "Add or remove hashtags"
+msgstr ""
+
+#: includes/core/um-activity-init.php:104
+msgid "Choose from the most used hashtags"
+msgstr ""
+
+#: includes/core/um-activity-init.php:105
+msgid "No hashtags found."
+msgstr ""
+
+#: includes/core/um-activity-widget.php:15
+msgid "Ultimate Member - Trending Hashtags"
+msgstr ""
+
+#: includes/core/um-activity-widget.php:18
+msgid "Shows your trending hashtags"
+msgstr ""
+
+#: includes/core/um-activity-widget.php:47
+msgid "Trending"
+msgstr ""
+
+#: includes/core/um-activity-widget.php:54
+msgid "Title:"
+msgstr ""
+
+#: templates/clone.php:26 templates/user-wall.php:114
+msgid "Cancel editing"
+msgstr ""
+
+#: templates/clone.php:26 templates/user-wall.php:114
+msgid "Update"
+msgstr ""
+
+#: templates/clone.php:28 templates/user-wall.php:118
+msgid "Are you sure you want to delete this post?"
+msgstr ""
+
+#: templates/clone.php:28 templates/comment-reply.php:35
+#: templates/comment.php:53 templates/comments.php:38 templates/comments.php:70
+#: templates/user-wall.php:118
+msgid "Delete"
+msgstr ""
+
+#: templates/clone.php:81 templates/comment-reply.php:21
+#: templates/comment-reply.php:23 templates/comment.php:36
+#: templates/comment.php:38 templates/comments.php:32 templates/comments.php:63
+#: templates/user-wall.php:192 templates/user-wall.php:194
+msgid "Like"
+msgstr ""
+
+#: templates/clone.php:83 templates/user-wall.php:197
+msgid "Comment"
+msgstr ""
+
+#: templates/comment-reply.php:9
+msgid "Reply hidden. <a href=\"#\" class=\"um-link\">Show this reply</a>"
+msgstr ""
+
+#: templates/comment-reply.php:19 templates/comment.php:43
+#: templates/comments.php:33
+msgid "Reply"
+msgstr ""
+
+#: templates/comment-reply.php:21 templates/comment-reply.php:23
+#: templates/comment.php:36 templates/comment.php:38 templates/comments.php:32
+#: templates/comments.php:63 templates/user-wall.php:192
+#: templates/user-wall.php:194
+msgid "Unlike"
+msgstr ""
+
+#: templates/comment-reply.php:21 templates/comment.php:36
+msgid "Unike"
+msgstr ""
+
+#: templates/comment-reply.php:35 templates/comment.php:53
+#: templates/comments.php:38 templates/comments.php:70
+msgid "Are you sure you want to delete this comment?"
+msgstr ""
+
+#: templates/comment.php:20
+msgid "Comment hidden. <a href=\"#\" class=\"um-link\">Show this comment</a>"
+msgstr ""
+
+#: templates/comment.php:88
+#, php-format
+msgid "load %s more replies"
+msgstr ""
+
+#: templates/comment.php:90
+#, php-format
+msgid "load %s more reply"
+msgstr ""
+
+#: templates/comment.php:92 templates/comments.php:99
+msgid "load more replies"
+msgstr ""
+
+#: templates/comment.php:92 templates/comments.php:99
+msgid "load more comments"
+msgstr ""
+
+#: templates/comments.php:7
+msgid "Write a reply..."
+msgstr ""
+
+#: templates/comments.php:7
+msgid "Write a comment..."
+msgstr ""
+
+#: templates/comments.php:15 templates/comments.php:51
+msgid "Hide"
+msgstr ""
+
+#: templates/comments.php:95
+#, php-format
+msgid "load %s more comments"
+msgstr ""
+
+#: templates/comments.php:97
+#, php-format
+msgid "load %s more comment"
+msgstr ""
+
+#: templates/html/new-follow.php:1
+msgid "has just followed"
+msgstr ""
+
+#: templates/html/new-gform-submission.php:1 templates/html/new-gform.php:1
+msgid "just created a new "
+msgstr ""
+
+#: templates/html/new-gform-submission.php:1
+msgid "Gravity Form Answer"
+msgstr ""
+
+#: templates/html/new-gform.php:1
+msgid "Gravity Form"
+msgstr ""
+
+#: templates/html/new-group.php:1
+msgid "created the group"
+msgstr ""
+
+#: templates/html/new-post.php:1
+msgid "just created a new blog"
+msgstr ""
+
+#: templates/html/new-post.php:1
+msgid "post"
+msgstr ""
+
+#: templates/html/new-product.php:1
+msgid "just added a new"
+msgstr ""
+
+#: templates/html/new-product.php:1
+msgid "product"
+msgstr ""
+
+#: templates/html/new-topic.php:1
+msgid "just created a new forum"
+msgstr ""
+
+#: templates/html/new-topic.php:1
+msgid "topic"
+msgstr ""
+
+#: templates/html/new-user.php:1
+msgid "just joined the site. Check out their profile"
+msgstr ""
+
+#: templates/new.php:6
+msgid "Post on your wall"
+msgstr ""
+
+#: templates/new.php:6
+#, php-format
+msgid "Post on %s's wall"
+msgstr ""
+
+#: templates/new.php:12
+msgid "Say something about this photo"
+msgstr ""
+
+#: templates/new.php:12
+msgid "What's on your mind?"
+msgstr ""
+
+#: templates/new.php:34
+msgid "Add photo"
+msgstr ""
+
+#: templates/new.php:34
+msgid "Image is too large"
+msgstr ""
+
+#: templates/new.php:34
+msgid "Please upload a valid image"
+msgstr ""
+
+#: templates/new.php:44
+msgid "Post"
+msgstr ""
+
+#: templates/user-wall.php:123 templates/user-wall.php:124
+msgid "Report"
+msgstr ""
+
+#: templates/user-wall.php:123 templates/user-wall.php:124
+msgid "Cancel report"
+msgstr ""
+
+#: templates/user-wall.php:176
+msgid "likes"
+msgstr ""
+
+#: templates/user-wall.php:176
+msgid "comments"
+msgstr ""
+
+#: um-social-activity.php:38 um-social-activity.php:54
+#, php-format
+msgid ""
+"The <strong>%s</strong> extension requires the Ultimate Member plugin to be "
+"activated to work properly. You can download it <a href=\"https://wordpress."
+"org/plugins/ultimate-member\">here</a>"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Ultimate Member - Social Activity"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://ultimatemember.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Engage community users with beautiful social activity walls"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Ultimate Member"
+msgstr ""

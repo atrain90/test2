@@ -1,0 +1,10 @@
+{
+    "type": "EQUITY",
+    "symbol": "A",
+    "name": "Agilent Technologies, Inc.",
+    "price": 77.05,
+    "currency": "USD",
+    "change_abs": 0.20000458,
+    "change_pct": 0.002602532,
+    "last_update": 1573592538000
+}
